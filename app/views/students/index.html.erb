@@ -8,3 +8,10 @@
 <% @students.each do |student| %>
   <%= render partial: 'student', locals: {student: student} %>
 <% end %>
+
+<!--we need to specify method: :get because form_tags automatically submit post requests, and the reason we use form_tag here and not form_for is because we don't have a student object
+
+* Use form_tag when you simply need an HTML form generated. Examples of this would be: a search form field or a contact form 
+
+--> 
+
